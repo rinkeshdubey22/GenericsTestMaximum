@@ -43,4 +43,23 @@ public class GenericsMaximumTest {
         Assertions.assertEquals(9.5f, result);
     }
 
+    @Test
+    public void  givenString_whenFirstStringIsMax_ReturnSame() {
+        String result = genericsMaximumTest.testMaxString("Banana", "Apple", "Plum");
+        Assertions.assertEquals("Plum", result);
+    }
+
+    @Test
+    public void  givenString_whenSecondStringIsMax_ReturnSame() {
+        String result = genericsMaximumTest.testMaxString("Apple", "Banana", "Plum");
+        Assertions.assertEquals("Plum", result);
+    }
+
+    @Test
+    public void  givenString_whenThirdStringIsMax_ReturnSame() {
+        String result = genericsMaximumTest.testMaxString("Plum", "Apple", "Banana");
+        Assertions.assertEquals("Plum", result);
+    }
+
+
 }
