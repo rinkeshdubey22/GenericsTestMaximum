@@ -11,6 +11,7 @@ public class GenericsMaximumTest {
         GenericsMaximum<Integer> integerGenericsMaximum = new GenericsMaximum<Integer>();
         Integer result = integerGenericsMaximum.testMax(10, 5, 2);
         Assertions.assertEquals(10, result);
+        integerGenericsMaximum.printMax();
     }
 
     @Test
@@ -18,6 +19,7 @@ public class GenericsMaximumTest {
         GenericsMaximum<Integer> integerGenericsMaximum = new GenericsMaximum<Integer>();
         Integer result = integerGenericsMaximum.testMax(5, 10, 2);
         Assertions.assertEquals(10, result);
+        integerGenericsMaximum.printMax();
     }
 
     @Test
@@ -25,6 +27,7 @@ public class GenericsMaximumTest {
         GenericsMaximum<Integer> integerGenericsMaximum = new GenericsMaximum<Integer>();
         Integer result = integerGenericsMaximum.testMax(2, 5, 10);
         Assertions.assertEquals(10, result);
+        integerGenericsMaximum.printMax();
     }
 
     @Test
@@ -32,6 +35,7 @@ public class GenericsMaximumTest {
         GenericsMaximum<Float> floatGenericsMaximum = new GenericsMaximum<Float>();
         Float result = floatGenericsMaximum.testMax(10.5f, 5.5f, 2.5f);
         Assertions.assertEquals(10.5f, result);
+        floatGenericsMaximum.printMax();
     }
 
     @Test
@@ -39,6 +43,7 @@ public class GenericsMaximumTest {
         GenericsMaximum<Float> floatGenericsMaximum = new GenericsMaximum<Float>();
         Float result = floatGenericsMaximum.testMax(5.5f, 10.5f, 2.5f);
         Assertions.assertEquals(10.5f, result);
+        floatGenericsMaximum.printMax();
     }
 
     @Test
@@ -46,6 +51,7 @@ public class GenericsMaximumTest {
         GenericsMaximum<Float> floatGenericsMaximum = new GenericsMaximum<Float>();
         Float result = floatGenericsMaximum.testMax(2.5f, 5.5f, 10.5f);
         Assertions.assertEquals(10.5f, result);
+        floatGenericsMaximum.printMax();
     }
 
     @Test
@@ -53,6 +59,7 @@ public class GenericsMaximumTest {
         GenericsMaximum<String> stringGenericsMaximum = new GenericsMaximum<String>();
         String result = stringGenericsMaximum.testMax("Banana", "Apple", "Plum");
         Assertions.assertEquals("Plum", result);
+        stringGenericsMaximum.printMax();
     }
 
     @Test
@@ -60,6 +67,7 @@ public class GenericsMaximumTest {
         GenericsMaximum<String> stringGenericsMaximum = new GenericsMaximum<String>();
         String result = stringGenericsMaximum.testMax("Apple", "Banana", "Plum");
         Assertions.assertEquals("Plum", result);
+        stringGenericsMaximum.printMax();
     }
 
     @Test
@@ -67,6 +75,7 @@ public class GenericsMaximumTest {
         GenericsMaximum<String> stringGenericsMaximum = new GenericsMaximum<String>();
         String result = stringGenericsMaximum.testMax("Apple", "Plum", "Banana");
         Assertions.assertEquals("Plum", result);
+        stringGenericsMaximum.printMax();
     }
 
 
